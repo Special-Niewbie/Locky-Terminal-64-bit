@@ -45,7 +45,7 @@ Ko-fi:
 
 ![Dev-C++](./image/DEVCPP.png)
 
-The program was developed using the Dev-C++ IDE, providing a convenient environment for writing and compiling C programs. It is specifically tailored for older 32-bit terminal systems and operating systems. To ensure compatibility, the `-std=c99` flag was added to the compiler settings. Additionally, the linker option `-static-libgcc` was included to ensure proper linking of the required libraries.
+The program was developed using the Dev-C++ IDE, providing a convenient environment for writing and compiling C programs. It is specifically tailored for modern 64-bit terminal systems and operating systems. To ensure compatibility, the `-std=c99` flag was added to the compiler settings. Additionally, the linker option `-static-libgcc` was included to ensure proper linking of the required libraries.
 
 ## Contributions
 
