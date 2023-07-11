@@ -1,0 +1,33 @@
+# Project: Locky Terminal 64bit
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = Locky_Terminal_private.res
+OBJ      = main.o $(RES)
+LINKOBJ  = main.o $(RES)
+LIBS     = -L"C:/devkitPro/msys2/mingw64/lib" -L"C:/devkitPro/msys2/mingw64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/devkitPro/msys2/mingw64/include" -I"C:/devkitPro/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include" -I"C:/devkitPro/msys2/mingw64/include/gtk-4.0" -I"C:/devkitPro/msys2/mingw64/include/glib-2.0" -I"C:/devkitPro/msys2/mingw64/lib/glib-2.0/include" -I"C:/devkitPro/msys2/mingw64/include/cairo" -I"C:/devkitPro/msys2/mingw64/include/pango-1.0" -I"C:/devkitPro/msys2/mingw64/include/harfbuzz" -I"C:/devkitPro/msys2/mingw64/include/gdk-pixbuf-2.0" -I"C:/devkitPro/msys2/mingw64/include/graphene-1.0" -I"C:/devkitPro/msys2/mingw64/lib/graphene-1.0/include"
+CXXINCS  = -I"C:/devkitPro/msys2/mingw64/include" -I"C:/devkitPro/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include"
+BIN      = "Locky Terminal 64bit.exe"
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+Locky_Terminal_private.res: Locky_Terminal_private.rc 
+	$(WINDRES) -i Locky_Terminal_private.rc --input-format=rc -o Locky_Terminal_private.res -O coff 
+
