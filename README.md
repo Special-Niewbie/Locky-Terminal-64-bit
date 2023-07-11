@@ -17,7 +17,7 @@ Ko-fi:
 
 ## Usage
 
-1. Download the program by clicking [here](https://github.com/Special-Niewbie/Locky-Terminal-64bit/releases/download/1.0.0.0/Locky.Terminal.64bit.exe).
+1. Download the program by clicking [here](https://github.com/Special-Niewbie/Locky-Terminal-64-bit/releases/download/1.0.0.0/Locky.Terminal.64bit.exe).
 2. Locate the downloaded file named `Locky Terminal 64bit.exe`.
 3. Run the `Locky Terminal 64bit.exe` file to launch the program in the terminal.
 4. Enter a username when prompted.
